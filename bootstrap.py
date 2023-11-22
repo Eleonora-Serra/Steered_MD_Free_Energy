@@ -8,7 +8,7 @@ from Free_energy_estimators.Jarzynski import Jarzyinski_function
 from Free_energy_estimators.BAR_algorithm import bennett
 
 
-### constants ###
+### constants for bootstrap ###
 T = 298
 kb = sc.constants.Boltzmann # 1.380649e-23 J
 Na = sc.constants.Avogadro # 6.02214076e+23 mol-1
