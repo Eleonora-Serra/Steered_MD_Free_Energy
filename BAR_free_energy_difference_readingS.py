@@ -36,6 +36,7 @@ wdir = '/home/eserra@iit.local/work/%s/SteeredMD'%(ligand)
 input_files_path_binding = wdir+'/binding/Colvar_%sns_binding_newPath/'%(sim_time)
 
 input_files_path_unbinding = wdir+'/unbinding/Colvar_%sns_unbinding_newPath/'%(sim_time)
+
 colvar_files_prefix_bind = 'colvar_bind_correct_'
 colvar_files_prefix_unb = 'colvar_unb_correct_'
 

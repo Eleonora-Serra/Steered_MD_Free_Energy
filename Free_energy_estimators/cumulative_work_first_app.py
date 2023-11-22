@@ -5,17 +5,11 @@ import numpy as np
 import os
 
 #######################################################
-
-### Exract const from sim_const ###
-
 dt = 0.002
-
 ######################################################
 
 #Function to read the Colvar files and create a file with replicas work values for each value of s reading the first appeareance for the S value
-
 #N.B. work_at_different_s_values_first_app uses the work related to the first appearance of the S value
-
 #and creates one file for each S with 2 columns: colvar_num_file and cumulative work at that time
 
 def work_at_different_s_values_first_app(replicas,
@@ -33,8 +27,8 @@ def work_at_different_s_values_first_app(replicas,
                       final_s,
 
                       invert):
+        
 
-                      
 
         os.mkdir(output_files_path)
 
@@ -104,8 +98,6 @@ def work_at_different_s_values_first_app(replicas,
                         all_works_initial = pd.concat(final_work_initial)
 
                 all_works_initial.to_csv(f'{output_files_path}/{output_prefix}{final_s}', header=None, index=None, sep=',')
-
-                
 
         #create a file for each value of s 
 
